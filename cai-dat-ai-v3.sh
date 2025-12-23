@@ -37,6 +37,7 @@ check_adb() {
 }
 
 wait_for_wifi() {
+    sleep 5
     log_info "Kiem tra ket noi Wi-Fi toi $ADB_DEVICE_IP..."
     local wifi_prompt_shown=0
     while true; do
@@ -57,7 +58,6 @@ is_device_connected() {
 }
 
 ensure_device_connection() {
-    sleep 5
     wait_for_wifi
     if is_device_connected; then
         return
