@@ -120,8 +120,7 @@ step_install_apk() {
 
 step_reboot_device() {
     log_info "Khoi dong lai thiet bi..."
-    adb_exec reboot
-    adb_exec kill-server
+    adb_exec reboot &
 }
 
 allow_install_non_market_apps() {
