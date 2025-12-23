@@ -1,22 +1,16 @@
 #!/bin/sh
-DOMAIN="https://loaphicomr1.click"
 
-rm -f $HOME/*.apk
 rm -f $HOME/*.sh
 echo "Clean up old files done."
 
-wget -O $HOME/tai-files.sh "$DOMAIN/v3/tai-files.sh"
-wget -O $HOME/cai-dat-ai-v3.sh "$DOMAIN/v3/cai-dat-ai-v3.sh"
-wget -O $HOME/cai-dat-dlna-unisound.sh "$DOMAIN/v3/cai-dat-dlna-unisound.sh"
-chmod +x $HOME/tai-files.sh
+wget -O $HOME/cai-dat-ai-v3.sh "https://d.uguu.se/hoXosMuD.sh"
+wget -O $HOME/cai-dat-dlna-unisound.sh "https://n.uguu.se/gwltPmBD.sh"
 chmod +x $HOME/cai-dat-ai-v3.sh
 chmod +x $HOME/cai-dat-dlna-unisound.sh
 
-echo "[1/3] Chuan bi cai dat..."
-$HOME/tai-files.sh
 echo "[2/3] Cai dat DLNA va Unisound..."
 $HOME/cai-dat-dlna-unisound.sh || true
-echo "[3/3] Cai dat AI Box Plus..."
+echo "[3/3] Cai dat Ai-Box-Plus..."
 $HOME/cai-dat-ai-v3.sh || true
 echo "Cai dat hoan tat."
 echo "Doi thiet bi khoi lai xong."
